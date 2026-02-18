@@ -1,49 +1,51 @@
 <div align="center">
-  <img src="https://ptb.discord.com/assets/discord-logo.svg" alt="Discord Logo" width="120" />
+  <img src="https://i.imgur.com/nYORXlL.png" alt="Discord Logo" width="120" />
   
-  # AutoComplete
-  
-  <strong>Automatize missões do Discord (games e vídeos) de forma rápida e prática!</strong>
+  <h1 style="font-size:2.5em; color:#5865F2; margin-bottom:0.2em;">AutoComplete</h1>
+  <p style="font-size:1.2em; color:#23272A; font-weight:bold;">Automatize missões do Discord (games e vídeos) de forma rápida e prática!</p>
+  <br>
+  <a href="CREDS.md" style="font-size:1.1em; color:#5865F2; font-weight:bold;">→ Créditos & Referências</a>
 </div>
 
-<p align="center">
-  <a href="CREDS.md"><strong>→ Créditos & Referências</strong></a>
-</p>
+---
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Discord-Automation-blue?style=for-the-badge&logo=discord" />
+  <img src="https://img.shields.io/badge/Status-Experimental-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+</div>
 
 ---
 
-## ⚠️ Aviso Importante
+## ⚠️ <span style="color:#F04747">Aviso Importante</span>
 
-**Não me responsabilizo em caso de ban em sua conta.**
-
-Por mais que não tenha nenhum banimento apurado, teoricamente usar automações assim é contra a ToS do Discord. Use por sua conta e risco.
+> **Não me responsabilizo em caso de ban em sua conta.**
+>
+> Por mais que não tenha nenhum banimento apurado, teoricamente usar automações assim é contra a ToS do Discord. Use por sua conta e risco.
 
 ---
 
-## 🚀 Como usar?
+## 🚀 <span style="color:#57F287">Como usar?</span>
 
-1. **Instale a versão de testes do Discord:**
-   - [Discord PTB](https://ptb.discord.com/)
-   
-   <img src="DiscordPTBSetup.png" alt="Discord PTB Setup" width="180" />
-
-2. **Abra o DevTools:**
-   - Após instalar o app, faça login em sua conta.
-   - Pressione `Ctrl + Shift + I` para abrir o console/DevTools.
-   
-   <img src="DevTools.png" alt="DevTools" width="400" />
-
-3. **Permita colar scripts:**
-   - No DevTools, digite:
-     ```
-     allow pasting
-     ```
-   
-   <img src="AllowPasting.png" alt="Allow Pasting" width="300" />
-
-4. **Cole o script abaixo:**
-
-```javascript
+<ol>
+  <li><b>Instale a versão de testes do Discord:</b><br>
+    <a href="https://ptb.discord.com/">Discord PTB</a>
+  </li>
+  <br>
+  <li><b>Abra o DevTools:</b><br>
+    Após instalar o app, faça login em sua conta.<br>
+    Pressione <code>Ctrl + Shift + I</code> para abrir o console/DevTools.
+  </li>
+  <br>
+  <li><b>Permita colar scripts:</b><br>
+    No DevTools, digite:
+    <br>
+    <pre style="background:#23272A; color:#57F287; padding:8px; border-radius:6px;">allow pasting</pre>
+  </li>
+  <br>
+  <li><b>Cole o script abaixo:</b><br>
+    <br>
+    <pre style="background:#23272A; color:#5865F2; padding:12px; border-radius:8px; font-size:0.95em;">
 (function() {
     "use strict";
 
@@ -94,12 +96,16 @@ Por mais que não tenha nenhum banimento apurado, teoricamente usar automações
         initQuestHelper();
     }
 })();
-```
+    </pre>
+  </li>
+</ol>
 
 ---
 
-## ✅ Finalizando
+## ✅ <span style="color:#57F287">Finalizando</span>
 
-Após isso, basta aceitar uma missão e, na UI, clicar em **Start**.
+Após isso, basta aceitar uma missão e, na UI, clicar em <b>Start</b>.
 
 <img src="AcceptMission.png" alt="Aceitar Missão" width="500" />
+
+---
