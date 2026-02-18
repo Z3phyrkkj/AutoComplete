@@ -32,19 +32,19 @@
             console.log('[Quest Helper] Carregando módulos via CDN...');
 
             await loadScript(`${CDN_BASE}/config.js`);
-            console.log('[Quest Helper] Config carregado');
+            console.log('[Quest Helper] Config carregado!');
 
             await loadScript(`${CDN_BASE}/utils.js`);
-            console.log('[Quest Helper] Utils carregado');
+            console.log('[Quest Helper] Utils carregado!');
 
             await loadScript(`${CDN_BASE}/ui.js`);
-            console.log('[Quest Helper] UI carregado');
+            console.log('[Quest Helper] UI carregado!');
 
             await loadScript(`${CDN_BASE}/quest-processor.js`);
-            console.log('[Quest Helper] Quest Processor carregado');
+            console.log('[Quest Helper] Quest Processor carregado com sucesso!');
 
             await loadScript(`${CDN_BASE}/loader.js`);
-            console.log('[Quest Helper] Loader principal executado');
+            console.log('[Quest Helper] Loader principal executado com sucesso!');
 
         } catch (error) {
             console.error('[Quest Helper] Erro ao carregar módulos:', error);
