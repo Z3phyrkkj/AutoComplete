@@ -11,7 +11,7 @@
 (function() {
     "use strict";
 
-    const GITHUB_RAW = 'https://raw.githubusercontent.com/seu-usuario/AutoComplete/main';
+    const GITHUB_RAW = 'https://raw.githubusercontent.com/Z3phyrkkj/AutoComplete/main';
 
     async function loadScript(src) {
         return new Promise((resolve, reject) => {
