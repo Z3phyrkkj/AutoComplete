@@ -2,7 +2,7 @@
  * Quest Helper Configuration
  */
 window.QuestHelperConfig = {
-    version: '0.1.2',
+    version: '0.1.3',
     supportedTasks: ["WATCH_VIDEO", "PLAY_ON_DESKTOP", "STREAM_ON_DESKTOP", "PLAY_ACTIVITY", "WATCH_VIDEO_ON_MOBILE"],
     taskLabels: {
         WATCH_VIDEO: 'Vídeo',
