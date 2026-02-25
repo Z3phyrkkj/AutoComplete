@@ -54,17 +54,153 @@
     const QuestHelperConfig = {
         version: '0.1.4',
         supportedTasks: ['WATCH_VIDEO', 'PLAY_ON_DESKTOP', 'STREAM_ON_DESKTOP', 'PLAY_ACTIVITY', 'WATCH_VIDEO_ON_MOBILE'],
-        taskLabels: {
-            WATCH_VIDEO: 'Vídeo',
-            PLAY_ON_DESKTOP: 'Desktop',
-            STREAM_ON_DESKTOP: 'Stream',
-            PLAY_ACTIVITY: 'Atividade',
-            WATCH_VIDEO_ON_MOBILE: 'Mobile'
-        },
         refreshInterval: 30000,
         heartbeatInterval: 20000,
         maxRetries: 3,
         logoUrl: 'https://i.imgur.com/nYORXlL.png'
+    };
+
+    const i18n = {
+        pt: {
+            panelTitle: "Quest Helper",
+            minimize: "Minimizar",
+            close: "Fechar",
+            total: "Total",
+            active: "Ativas",
+            progress: "Progresso",
+            loading: "Carregando...",
+            startBtn: "Iniciar Quests",
+            refreshBtn: "Atualizar",
+            initText: "Inicializando...",
+            emptyTitle: "Nenhuma quest disponível",
+            emptySub: "Clique em ↻ para atualizar",
+            unknown: "Desconhecido",
+            processing: "Processando",
+            noQuests: "Nenhuma quest para processar",
+            allDone: "Todas as quests concluídas!",
+            useDesktop: "Use o app desktop!",
+            noVoice: "Nenhum canal de voz disponível",
+            done: "concluída!",
+            error: "Erro",
+            available: "disponível",
+            availables: "disponíveis",
+            noActive: "Nenhuma quest ativa",
+            listUpdated: "Lista atualizada",
+            processingBtn: "↻ Processando...",
+            tasks: { WATCH_VIDEO: 'Vídeo', PLAY_ON_DESKTOP: 'Desktop', STREAM_ON_DESKTOP: 'Stream', PLAY_ACTIVITY: 'Atividade', WATCH_VIDEO_ON_MOBILE: 'Mobile' }
+        },
+        en: {
+            panelTitle: "Quest Helper",
+            minimize: "Minimize",
+            close: "Close",
+            total: "Total",
+            active: "Active",
+            progress: "Progress",
+            loading: "Loading...",
+            startBtn: "Start Quests",
+            refreshBtn: "Refresh",
+            initText: "Initializing...",
+            emptyTitle: "No quests available",
+            emptySub: "Click ↻ to refresh",
+            unknown: "Unknown",
+            processing: "Processing",
+            noQuests: "No quests to process",
+            allDone: "All quests completed!",
+            useDesktop: "Use the desktop app!",
+            noVoice: "No voice channel available",
+            done: "completed!",
+            error: "Error",
+            available: "available",
+            availables: "available",
+            noActive: "No active quests",
+            listUpdated: "List updated",
+            processingBtn: "↻ Processing...",
+            tasks: { WATCH_VIDEO: 'Video', PLAY_ON_DESKTOP: 'Desktop', STREAM_ON_DESKTOP: 'Stream', PLAY_ACTIVITY: 'Activity', WATCH_VIDEO_ON_MOBILE: 'Mobile' }
+        },
+        es: {
+            panelTitle: "Quest Helper",
+            minimize: "Minimizar",
+            close: "Cerrar",
+            total: "Total",
+            active: "Activas",
+            progress: "Progreso",
+            loading: "Cargando...",
+            startBtn: "Iniciar Quests",
+            refreshBtn: "Actualizar",
+            initText: "Inicializando...",
+            emptyTitle: "Ninguna quest disponible",
+            emptySub: "Haz clic en ↻ para actualizar",
+            unknown: "Desconocido",
+            processing: "Procesando",
+            noQuests: "Ninguna quest para procesar",
+            allDone: "¡Todas las quests completadas!",
+            useDesktop: "¡Usa la app de escritorio!",
+            noVoice: "Ningún canal de voz disponible",
+            done: "¡completada!",
+            error: "Error",
+            available: "disponible",
+            availables: "disponibles",
+            noActive: "Ninguna quest activa",
+            listUpdated: "Lista actualizada",
+            processingBtn: "↻ Procesando...",
+            tasks: { WATCH_VIDEO: 'Video', PLAY_ON_DESKTOP: 'Desktop', STREAM_ON_DESKTOP: 'Stream', PLAY_ACTIVITY: 'Actividad', WATCH_VIDEO_ON_MOBILE: 'Móvil' }
+        },
+        ru: {
+            panelTitle: "Quest Helper",
+            minimize: "Свернуть",
+            close: "Закрыть",
+            total: "Всего",
+            active: "Активные",
+            progress: "Прогресс",
+            loading: "Загрузка...",
+            startBtn: "Начать квесты",
+            refreshBtn: "Обновить",
+            initText: "Инициализация...",
+            emptyTitle: "Нет доступных квестов",
+            emptySub: "Нажмите ↻ для обновления",
+            unknown: "Неизвестно",
+            processing: "Обработка",
+            noQuests: "Нет квестов для обработки",
+            allDone: "Все квесты завершены!",
+            useDesktop: "Используйте приложение для ПК!",
+            noVoice: "Нет доступного голосового канала",
+            done: "завершено!",
+            error: "Ошибка",
+            available: "доступно",
+            availables: "доступно",
+            noActive: "Нет активных квестов",
+            listUpdated: "Список обновлен",
+            processingBtn: "↻ Обработка...",
+            tasks: { WATCH_VIDEO: 'Видео', PLAY_ON_DESKTOP: 'ПК', STREAM_ON_DESKTOP: 'Стрим', PLAY_ACTIVITY: 'Активность', WATCH_VIDEO_ON_MOBILE: 'Мобильный' }
+        },
+        id: {
+            panelTitle: "Quest Helper",
+            minimize: "Minimalkan",
+            close: "Tutup",
+            total: "Total",
+            active: "Aktif",
+            progress: "Kemajuan",
+            loading: "Memuat...",
+            startBtn: "Mulai Quest",
+            refreshBtn: "Segarkan",
+            initText: "Menginisialisasi...",
+            emptyTitle: "Tidak ada quest tersedia",
+            emptySub: "Klik ↻ untuk menyegarkan",
+            unknown: "Tidak diketahui",
+            processing: "Memproses",
+            noQuests: "Tidak ada quest untuk diproses",
+            allDone: "Semua quest selesai!",
+            useDesktop: "Gunakan aplikasi desktop!",
+            noVoice: "Tidak ada saluran suara yang tersedia",
+            done: "selesai!",
+            error: "Kesalahan",
+            available: "tersedia",
+            availables: "tersedia",
+            noActive: "Tidak ada quest aktif",
+            listUpdated: "Daftar diperbarui",
+            processingBtn: "↻ Memproses...",
+            tasks: { WATCH_VIDEO: 'Video', PLAY_ON_DESKTOP: 'Desktop', STREAM_ON_DESKTOP: 'Streaming', PLAY_ACTIVITY: 'Aktivitas', WATCH_VIDEO_ON_MOBILE: 'Seluler' }
+        }
     };
 
     const QuestHelperUtils = {
@@ -385,6 +521,7 @@
                 to   { opacity: 1; transform: translateY(0); }
             }
 
+            /* ... (Demais estilos do Boot Screen) ... */
             .qh-boot {
                 position: fixed; top: 66px; right: 18px; width: 354px;
                 font-family: var(--qh-font); color: var(--qh-text); z-index: 10000;
@@ -445,126 +582,46 @@
                 100% { left: 120%; }
             }
 
-            .qh-load-steps {
-                margin-top: 16px; display: flex; flex-direction: column; gap: 6px;
-            }
-            .qh-load-step {
-                display: flex; align-items: center; gap: 9px;
-                font-size: 11.5px; font-weight: 600; color: var(--qh-muted);
-                transition: color 0.25s ease, opacity 0.25s ease;
-                opacity: 0.4;
-            }
+            .qh-load-steps { margin-top: 16px; display: flex; flex-direction: column; gap: 6px; }
+            .qh-load-step { display: flex; align-items: center; gap: 9px; font-size: 11.5px; font-weight: 600; color: var(--qh-muted); transition: color 0.25s ease, opacity 0.25s ease; opacity: 0.4; }
             .qh-load-step.active { color: var(--qh-text); opacity: 1; }
             .qh-load-step.done   { color: var(--qh-ok);   opacity: 0.7; }
-            .qh-load-step-dot {
-                width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
-                background: currentColor;
-                transition: all 0.25s ease;
-            }
-            .qh-load-step.active .qh-load-step-dot {
-                background: var(--qh-accent);
-                box-shadow: 0 0 8px var(--qh-accent-glow);
-                animation: qhPulse 1.2s ease-in-out infinite;
-            }
+            .qh-load-step-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; background: currentColor; transition: all 0.25s ease; }
+            .qh-load-step.active .qh-load-step-dot { background: var(--qh-accent); box-shadow: 0 0 8px var(--qh-accent-glow); animation: qhPulse 1.2s ease-in-out infinite; }
             .qh-load-step.done .qh-load-step-dot { background: var(--qh-ok); box-shadow: 0 0 6px rgba(74,222,128,0.5); }
 
             .qh-welcome-body { padding: 28px 20px 0; }
 
-            .qh-typing-wrap {
-                min-height: 56px;
-                display: flex; align-items: center; justify-content: center;
-                text-align: center;
-            }
-            .qh-typing-text {
-                font-size: 17px; font-weight: 700; color: var(--qh-text);
-                line-height: 1.45; letter-spacing: 0.1px;
-            }
-            .qh-typing-cursor {
-                display: inline-block; width: 2px; height: 1.1em;
-                background: var(--qh-accent); margin-left: 2px; vertical-align: text-bottom;
-                border-radius: 1px;
-                animation: qhBlink 0.85s step-end infinite;
-            }
-            @keyframes qhBlink {
-                0%, 100% { opacity: 1; }
-                50%       { opacity: 0; }
-            }
+            .qh-typing-wrap { min-height: 56px; display: flex; align-items: center; justify-content: center; text-align: center; }
+            .qh-typing-text { font-size: 17px; font-weight: 700; color: var(--qh-text); line-height: 1.45; letter-spacing: 0.1px; }
+            .qh-typing-cursor { display: inline-block; width: 2px; height: 1.1em; background: var(--qh-accent); margin-left: 2px; vertical-align: text-bottom; border-radius: 1px; animation: qhBlink 0.85s step-end infinite; }
+            @keyframes qhBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
-            .qh-lang-label {
-                font-size: 10px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase;
-                color: var(--qh-muted); margin: 20px 0 8px; padding: 0 2px;
-            }
+            .qh-lang-label { font-size: 10px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--qh-muted); margin: 20px 0 8px; padding: 0 2px; }
 
-            .qh-lang-list {
-                border-radius: 14px; overflow: hidden;
-                border: 1px solid var(--qh-border);
-                background: var(--qh-surface);
-                box-shadow: var(--qh-shadow-in);
-                margin-bottom: 20px;
-            }
-            .qh-lang-item {
-                display: flex; align-items: center; justify-content: space-between;
-                padding: 13px 16px; cursor: pointer;
-                transition: background 0.15s ease;
-                border-bottom: 1px solid var(--qh-border);
-                position: relative;
-            }
+            .qh-lang-list { border-radius: 14px; overflow: hidden; border: 1px solid var(--qh-border); background: var(--qh-surface); box-shadow: var(--qh-shadow-in); margin-bottom: 20px; }
+            .qh-lang-item { display: flex; align-items: center; justify-content: space-between; padding: 13px 16px; cursor: pointer; transition: background 0.15s ease; border-bottom: 1px solid var(--qh-border); position: relative; }
             .qh-lang-item:last-child { border-bottom: none; }
             .qh-lang-item:hover { background: var(--qh-surface-hov); }
             .qh-lang-item:active { background: rgba(124,136,255,0.12); }
 
             .qh-lang-left { display: flex; align-items: center; gap: 11px; }
-            .qh-lang-flag {
-                font-size: 20px; line-height: 1; width: 28px; text-align: center;
-                filter: drop-shadow(0 1px 3px rgba(0,0,0,0.4));
-            }
-            .qh-lang-name {
-                font-size: 13.5px; font-weight: 600; color: var(--qh-text);
-            }
-            .qh-lang-native {
-                font-size: 11px; font-weight: 500; color: var(--qh-muted); margin-top: 1px;
-            }
+            .qh-lang-flag { font-size: 20px; line-height: 1; width: 28px; text-align: center; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.4)); }
+            .qh-lang-name { font-size: 13.5px; font-weight: 600; color: var(--qh-text); }
+            .qh-lang-native { font-size: 11px; font-weight: 500; color: var(--qh-muted); margin-top: 1px; }
 
-            .qh-lang-check {
-                width: 20px; height: 20px; border-radius: 50%;
-                border: 2px solid var(--qh-border-strong);
-                display: flex; align-items: center; justify-content: center;
-                transition: all 0.18s var(--qh-ease);
-                flex-shrink: 0;
-            }
-            .qh-lang-item.selected .qh-lang-check {
-                background: var(--qh-accent);
-                border-color: var(--qh-accent);
-                box-shadow: 0 0 10px var(--qh-accent-glow);
-            }
-            .qh-lang-item.selected .qh-lang-check::after {
-                content: '';
-                width: 6px; height: 6px; border-radius: 50%; background: #fff;
-            }
+            .qh-lang-check { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--qh-border-strong); display: flex; align-items: center; justify-content: center; transition: all 0.18s var(--qh-ease); flex-shrink: 0; }
+            .qh-lang-item.selected .qh-lang-check { background: var(--qh-accent); border-color: var(--qh-accent); box-shadow: 0 0 10px var(--qh-accent-glow); }
+            .qh-lang-item.selected .qh-lang-check::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #fff; }
             .qh-lang-item.selected .qh-lang-name { color: var(--qh-accent-fg); }
 
-            .qh-welcome-footer {
-                padding: 0 20px 20px;
-            }
-            .qh-welcome-btn {
-                width: 100%; padding: 13px; border: none; border-radius: var(--qh-r-sm);
-                font-family: var(--qh-font); font-size: 13.5px; font-weight: 800;
-                cursor: pointer; letter-spacing: 0.3px;
-                background: linear-gradient(145deg, #5a6aee, #7c88ff); color: rgba(255,255,255,0.95);
-                border: 1px solid rgba(255,255,255,0.1);
-                box-shadow: 0 8px 22px rgba(100,116,255,0.4), inset 0 1px 0 rgba(255,255,255,0.2);
-                transition: all 0.2s var(--qh-ease);
-                opacity: 0.4; pointer-events: none;
-            }
+            .qh-welcome-footer { padding: 0 20px 20px; }
+            .qh-welcome-btn { width: 100%; padding: 13px; border: none; border-radius: var(--qh-r-sm); font-family: var(--qh-font); font-size: 13.5px; font-weight: 800; cursor: pointer; letter-spacing: 0.3px; background: linear-gradient(145deg, #5a6aee, #7c88ff); color: rgba(255,255,255,0.95); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 22px rgba(100,116,255,0.4), inset 0 1px 0 rgba(255,255,255,0.2); transition: all 0.2s var(--qh-ease); opacity: 0.4; pointer-events: none; }
             .qh-welcome-btn.ready { opacity: 1; pointer-events: auto; }
             .qh-welcome-btn.ready:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(100,116,255,0.55); filter: brightness(1.08); }
             .qh-welcome-btn.ready:active { transform: translateY(0); }
 
-            .qh-boot-exit {
-                opacity: 0; transform: translateY(-8px) scale(0.98);
-                transition: opacity 0.22s var(--qh-ease), transform 0.22s var(--qh-ease);
-                pointer-events: none;
-            }
+            .qh-boot-exit { opacity: 0; transform: translateY(-8px) scale(0.98); transition: opacity 0.22s var(--qh-ease), transform 0.22s var(--qh-ease); pointer-events: none; }
         `;
         document.head.appendChild(style);
     }
@@ -627,7 +684,7 @@
         return { element: iconContainer, badge, observer };
     }
 
-    function createPanel(onStart, onRefresh, onMinimize, onClose, onDrag) {
+    function createPanel(t, onStart, onRefresh, onMinimize, onClose, onDrag) {
         const panel = document.createElement('div');
         panel.className = 'qh-panel';
         panel.id = 'qhPanel';
@@ -635,31 +692,31 @@
             <div class="qh-header" id="qhDragHandle">
                 <div class="qh-logo">${LOGO_HDR}</div>
                 <div class="qh-title-block">
-                    <div class="qh-title">Quest Helper</div>
+                    <div class="qh-title">${t.panelTitle}</div>
                     <div class="qh-version">v${QuestHelperConfig.version}</div>
                 </div>
                 <div class="qh-hdr-actions">
-                    <button class="qh-hdr-btn" id="qhMinimizeBtn" title="Minimizar">${LU.minus}</button>
-                    <button class="qh-hdr-btn" id="qhCloseBtn" title="Fechar">${LU.x}</button>
+                    <button class="qh-hdr-btn" id="qhMinimizeBtn" title="${t.minimize}">${LU.minus}</button>
+                    <button class="qh-hdr-btn" id="qhCloseBtn" title="${t.close}">${LU.x}</button>
                 </div>
             </div>
             <div class="qh-content">
                 <div class="qh-stats">
-                    <div class="qh-stat"><div class="qh-stat-val" id="qhStatTotal">0</div><div class="qh-stat-lbl">Total</div></div>
-                    <div class="qh-stat"><div class="qh-stat-val" id="qhStatActive">0</div><div class="qh-stat-lbl">Ativas</div></div>
-                    <div class="qh-stat"><div class="qh-stat-val" id="qhStatProgress">0</div><div class="qh-stat-lbl">Progresso</div></div>
+                    <div class="qh-stat"><div class="qh-stat-val" id="qhStatTotal">0</div><div class="qh-stat-lbl">${t.total}</div></div>
+                    <div class="qh-stat"><div class="qh-stat-val" id="qhStatActive">0</div><div class="qh-stat-lbl">${t.active}</div></div>
+                    <div class="qh-stat"><div class="qh-stat-val" id="qhStatProgress">0</div><div class="qh-stat-lbl">${t.progress}</div></div>
                 </div>
                 <div class="qh-list" id="qhQuestList">
-                    <div class="qh-empty">${LU.layers}<div class="qh-empty-title">Carregando...</div></div>
+                    <div class="qh-empty">${LU.layers}<div class="qh-empty-title">${t.loading}</div></div>
                 </div>
             </div>
             <div class="qh-footer">
-                <button class="qh-btn qh-btn-primary" id="qhStartBtn" disabled>${LU.play} Iniciar Quests</button>
-                <button class="qh-btn qh-btn-icon" id="qhRefreshBtn" title="Atualizar">${LU.refreshCw}</button>
+                <button class="qh-btn qh-btn-primary" id="qhStartBtn" disabled>${LU.play} ${t.startBtn}</button>
+                <button class="qh-btn qh-btn-icon" id="qhRefreshBtn" title="${t.refreshBtn}">${LU.refreshCw}</button>
             </div>
             <div class="qh-status">
                 <span class="qh-status-dot" id="qhStatusDot"></span>
-                <span id="qhStatusText">Inicializando...</span>
+                <span id="qhStatusText">${t.initText}</span>
             </div>
         `;
         document.body.appendChild(panel);
@@ -688,7 +745,7 @@
         return elements;
     }
 
-    function updateQuestList(quests) {
+    function updateQuestList(quests, t) {
         const questList = document.getElementById('qhQuestList');
         if (!questList) return;
 
@@ -696,8 +753,8 @@
             questList.innerHTML = `
                 <div class="qh-empty">
                     ${LU.layers}
-                    <div class="qh-empty-title">Nenhuma quest disponível</div>
-                    <div class="qh-empty-sub">Clique em ↻ para atualizar</div>
+                    <div class="qh-empty-title">${t.emptyTitle}</div>
+                    <div class="qh-empty-sub">${t.emptySub}</div>
                 </div>`;
             return;
         }
@@ -712,7 +769,8 @@
                 const progress      = Math.min(100, Math.round((secondsDone / secondsNeeded) * 100));
                 const letter        = quest.config.application.name?.charAt(0).toUpperCase() || '?';
                 const icon          = taskIcons[taskName] || LU.zap;
-                const label         = QuestHelperConfig.taskLabels[taskName] || taskName;
+                
+                const label         = t.tasks[taskName] || taskName; 
 
                 return `
                 <div class="qh-card">
@@ -722,7 +780,7 @@
                         <span class="qh-task-chip">${icon} ${label}</span>
                     </div>
                     <div class="qh-progress-row">
-                        <span>${quest.config.application.name || 'Desconhecido'}</span>
+                        <span>${quest.config.application.name || t.unknown}</span>
                         <span>${QuestHelperUtils.formatTime(secondsDone)} / ${QuestHelperUtils.formatTime(secondsNeeded)}</span>
                     </div>
                     <div class="qh-bar-track"><div class="qh-bar-fill" style="width:${progress}%"></div></div>
@@ -732,24 +790,24 @@
     }
 
     const QuestHelperProcessor = {
-        async processQuests(state, stores, callback) {
+        async processQuests(state, stores, callback, t) {
             if (state.isRunning) return;
 
             const quests = [...state.quests];
             if (quests.length === 0) {
-                callback('message', 'Nenhuma quest para processar', 'error');
+                callback('message', t.noQuests, 'error');
                 return;
             }
 
             state.isRunning = true;
-            callback('buttonState', { disabled: true, text: '↻ Processando...' });
+            callback('buttonState', { disabled: true, text: t.processingBtn });
 
             const processNext = async () => {
                 const quest = quests.shift();
                 if (!quest) {
                     state.isRunning = false;
-                    callback('buttonState', { disabled: false, text: `${LU.play} Iniciar Quests` });
-                    callback('message', 'Todas as quests concluídas!', 'success');
+                    callback('buttonState', { disabled: false, text: `${LU.play} ${t.startBtn}` });
+                    callback('message', t.allDone, 'success');
                     callback('refresh');
                     return;
                 }
@@ -762,22 +820,22 @@
                     const taskName      = QuestHelperConfig.supportedTasks.find(x => taskConfig.tasks[x] != null);
                     const secondsNeeded = taskConfig.tasks[taskName].target;
 
-                    callback('message', `Processando: ${questName}...`, 'info');
+                    callback('message', `${t.processing}: ${questName}...`, 'info');
 
                     if (taskName === 'WATCH_VIDEO' || taskName === 'WATCH_VIDEO_ON_MOBILE') {
-                        await this._processVideo(quest, taskName, secondsNeeded, callback, stores.api);
+                        await this._processVideo(quest, taskName, secondsNeeded, callback, stores.api, t);
                     } else if (taskName === 'PLAY_ON_DESKTOP') {
-                        await this._playOnDesktop(quest, taskName, secondsNeeded, pid, applicationId, callback, stores, processNext);
+                        await this._playOnDesktop(quest, taskName, secondsNeeded, pid, applicationId, callback, stores, processNext, t);
                         return;
                     } else if (taskName === 'STREAM_ON_DESKTOP') {
-                        await this._streamOnDesktop(quest, taskName, secondsNeeded, pid, applicationId, callback, stores, processNext);
+                        await this._streamOnDesktop(quest, taskName, secondsNeeded, pid, applicationId, callback, stores, processNext, t);
                         return;
                     } else if (taskName === 'PLAY_ACTIVITY') {
-                        await this._playActivity(quest, taskName, secondsNeeded, callback, stores);
+                        await this._playActivity(quest, taskName, secondsNeeded, callback, stores, t);
                     }
                 } catch (e) {
                     console.error('[Quest Helper] Erro ao processar quest:', e);
-                    callback('message', `Erro: ${e.message}`, 'error');
+                    callback('message', `${t.error}: ${e.message}`, 'error');
                 }
 
                 processNext();
@@ -786,7 +844,7 @@
             processNext();
         },
 
-        async _processVideo(quest, taskName, secondsNeeded, callback, api) {
+        async _processVideo(quest, taskName, secondsNeeded, callback, api, t) {
             const maxFuture = 10, speed = 7, interval = 1;
             const enrolledAt = new Date(quest.userStatus.enrolledAt).getTime();
             let completed = false;
@@ -816,12 +874,12 @@
                 await api.post({ url: `/quests/${quest.id}/video-progress`, body: { timestamp: secondsNeeded } });
             }
 
-            callback('message', `${quest.config.messages.questName} concluída!`, 'success');
+            callback('message', `${quest.config.messages.questName} ${t.done}`, 'success');
         },
 
-        async _playOnDesktop(quest, taskName, secondsNeeded, pid, applicationId, callback, stores, processNext) {
+        async _playOnDesktop(quest, taskName, secondsNeeded, pid, applicationId, callback, stores, processNext, t) {
             if (typeof DiscordNative === 'undefined') {
-                callback('message', 'Use o app desktop!', 'error');
+                callback('message', t.useDesktop, 'error');
                 processNext();
                 return;
             }
@@ -868,21 +926,21 @@
                         stores.RunningGameStore.getGameForPID   = realGetGameForPID;
                         stores.FluxDispatcher.dispatch({ type: 'RUNNING_GAMES_CHANGE', removed: fakeGames, added: [], games: [] });
                         stores.FluxDispatcher.unsubscribe('QUESTS_SEND_HEARTBEAT_SUCCESS', handler);
-                        callback('message', `${quest.config.messages.questName} concluída!`, 'success');
+                        callback('message', `${quest.config.messages.questName} ${t.done}`, 'success');
                         processNext();
                     }
                 };
 
                 stores.FluxDispatcher.subscribe('QUESTS_SEND_HEARTBEAT_SUCCESS', handler);
             } catch (e) {
-                callback('message', `Erro: ${e.message}`, 'error');
+                callback('message', `${t.error}: ${e.message}`, 'error');
                 processNext();
             }
         },
 
-        async _streamOnDesktop(quest, taskName, secondsNeeded, pid, applicationId, callback, stores, processNext) {
+        async _streamOnDesktop(quest, taskName, secondsNeeded, pid, applicationId, callback, stores, processNext, t) {
             if (typeof DiscordNative === 'undefined') {
-                callback('message', 'Use o app desktop!', 'error');
+                callback('message', t.useDesktop, 'error');
                 processNext();
                 return;
             }
@@ -902,26 +960,26 @@
                     if (progress >= secondsNeeded) {
                         stores.ApplicationStreamingStore.getStreamerActiveStreamMetadata = realFunc;
                         stores.FluxDispatcher.unsubscribe('QUESTS_SEND_HEARTBEAT_SUCCESS', handler);
-                        callback('message', `${quest.config.messages.questName} concluída!`, 'success');
+                        callback('message', `${quest.config.messages.questName} ${t.done}`, 'success');
                         processNext();
                     }
                 };
 
                 stores.FluxDispatcher.subscribe('QUESTS_SEND_HEARTBEAT_SUCCESS', handler);
             } catch (e) {
-                callback('message', `Erro: ${e.message}`, 'error');
+                callback('message', `${t.error}: ${e.message}`, 'error');
                 processNext();
             }
         },
 
-        async _playActivity(quest, taskName, secondsNeeded, callback, stores) {
+        async _playActivity(quest, taskName, secondsNeeded, callback, stores, t) {
             try {
                 const channelId =
                     stores.ChannelStore.getSortedPrivateChannels()[0]?.id ??
                     Object.values(stores.GuildChannelStore.getAllGuilds()).find(x => x != null && x.VOCAL?.length > 0)?.VOCAL[0]?.channel?.id;
 
                 if (!channelId) {
-                    callback('message', 'Nenhum canal de voz disponível', 'error');
+                    callback('message', t.noVoice, 'error');
                     return;
                 }
 
@@ -941,9 +999,9 @@
                     await QuestHelperUtils.sleep(QuestHelperConfig.heartbeatInterval);
                 }
 
-                callback('message', `${quest.config.messages.questName} concluída!`, 'success');
+                callback('message', `${quest.config.messages.questName} ${t.done}`, 'success');
             } catch (e) {
-                callback('message', `Erro: ${e.message}`, 'error');
+                callback('message', `${t.error}: ${e.message}`, 'error');
             }
         }
     };
@@ -1150,7 +1208,9 @@
         console.log('[Quest Helper] Stores carregados com sucesso.');
 
         showWelcomeScreen(username, (langCode) => {
-            console.log('[Quest Helper] Pronto!');
+            console.log(`[Quest Helper] Idioma selecionado: ${langCode}. Pronto!`);
+            
+            const t = i18n[langCode] || i18n.pt;
 
             const state = {
                 isDragging:   false,
@@ -1215,12 +1275,14 @@
             function refreshQuests(elements) {
                 state.quests = getActiveQuests();
                 updateStats(state.quests, elements);
-                updateQuestList(state.quests);
+                updateQuestList(state.quests, t);
+
+                const countMsg = state.quests.length
+                    ? `${state.quests.length} quest${state.quests.length > 1 ? 's' : ''} ${state.quests.length > 1 ? t.availables : t.available}`
+                    : t.noActive;
 
                 QuestHelperUtils.showMessage(
-                    state.quests.length
-                        ? `${state.quests.length} quest${state.quests.length > 1 ? 's' : ''} disponível`
-                        : 'Nenhuma quest ativa',
+                    countMsg,
                     state.quests.length ? 'info' : 'error',
                     { text: elements.statusText, dot: elements.statusDot }
                 );
@@ -1248,6 +1310,7 @@
             });
 
             const elements = createPanel(
+                t,
                 () => {
                     const callback = (type, data, severity) => {
                         if (type === 'message') {
@@ -1258,11 +1321,11 @@
                             handleCallback('buttonState', data, elements);
                         }
                     };
-                    QuestHelperProcessor.processQuests(state, stores, callback);
+                    QuestHelperProcessor.processQuests(state, stores, callback, t);
                 },
                 () => {
                     refreshQuests(elements);
-                    QuestHelperUtils.showMessage('Lista atualizada', 'success', { text: elements.statusText, dot: elements.statusDot });
+                    QuestHelperUtils.showMessage(t.listUpdated, 'success', { text: elements.statusText, dot: elements.statusDot });
                 },
                 () => {
                     elements.panel.classList.add('qh-minimized');
